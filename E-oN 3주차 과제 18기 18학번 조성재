@@ -1,0 +1,13 @@
+list1=[]
+list1=list(map(int, input('숫자를 입력하세요 : ').split(',')))
+l=len(list1)
+
+print(list1)
+
+def sum_list(list1):
+    sum_l = 0
+    for i in list1:
+        sum_l = sum_l + i
+    return sum_l
+
+print(sum_list(list1))
