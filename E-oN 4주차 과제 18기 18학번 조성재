@@ -1,0 +1,15 @@
+in_num=[]
+in_num=list(map(int, input('숫자를 입력하세요 : ').split()))
+
+def bubbleSort(in_num):
+    n = len(in_num)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if in_num[j] > in_num[j + 1]: 
+                in_num[j], in_num[j + 1] = in_num[j + 1], in_num[j]
+
+
+bubbleSort(in_num)
+
+print("[오름차순 정렬 결과]")
+print(in_num)
